@@ -1,4 +1,3 @@
-
 const messages = [
     "Fuck No",
     "Don't Be Stupid",
