@@ -60,6 +60,12 @@ function fire(particleRatio, opts) {
 let canPlaySound = true; // Add this line to declare the canPlaySound variable
 
 document.getElementById('noButton').addEventListener('click', function() {
+
+     // Stop and reset the circus music
+        var circusMusic = document.getElementById('circusMusic');
+        circusMusic.pause();
+        circusMusic.currentTime = 0;
+
     fire(0.25, {
         spread: 26,
         startVelocity: 55,
@@ -90,6 +96,9 @@ document.getElementById('noButton').addEventListener('click', function() {
         setTimeout(() => {
             canPlaySound = true;
         }, 300); // Throttle sound to play every 300 milliseconds
+
+    // Allow the music to be played again if "Yes" is clicked after "No"
+        circusMusicPlayed = false;    
     }
 });
 
