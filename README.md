@@ -26,7 +26,7 @@ Check out the live version here: [shoulditextmyex.eth.limo](https://shoulditextm
 - Circus music, "Entrance of the Gladiators" by Julius Fučík, performed by the U.S. Marine Band (public domain), sourced from Wikipedia.
 
 ## Attribution for Circus Music
-"Entrance of the Gladiators" performed by the U.S. Marine Band, circa 1999, is in the public domain. The recording can be found on Wikipedia: [Entrance of the Gladiators - Wikipedia](https://en.wikipedia.org/wiki/File:Julius_Fu%C4%8Dik%27s_%22Entrance_of_the_Gladiators%22,_performed_by_the_U.S._Marine_Band.oga)
+"Entrance of the Gladiators" performed by the U.S. Marine Band, circa 1999, is in the public domain. The recording can be found on Wikipedia: [Entrance of the Gladiators - Wikipedia](https://en.wikipedia.org/wiki/File:Julius_Fu%C4%8D%C3%ADk%27s_%22Entrance_of_the_Gladiators%22,_performed_by_the_U.S._Marine_Band.oga)
 
 ## Disclaimer
 This website is for entertainment purposes only and does not encourage actual contact with an ex-partner.
