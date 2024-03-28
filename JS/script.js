@@ -118,6 +118,6 @@ Licensed under CC0 (Public Domain)
 "Entrance of the Gladiators" performed by the U.S. Marine Band, circa 1999
 Composer: Julius Fučík (1872–1916)
 Recording is in the public domain.
-Source: Wikipedia - https://en.wikipedia.org/wiki/File:Julius_Fu%C4%8Dik%27s_%22Entrance_of_the_Gladiators%22,_performed_by_the_U.S._Marine_Band.oga
+Source: Wikipedia - https://en.wikipedia.org/wiki/File:Julius_Fu%C4%8D%C3%ADk%27s_%22Entrance_of_the_Gladiators%22,_performed_by_the_U.S._Marine_Band.oga
 */
 
