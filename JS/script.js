@@ -25,7 +25,7 @@ function getRandomPosition(element) {
 }
 
 // Add a flag to track if the circus music has been played
-let circusMusicPlayed = false;
+let circusMusicPlayed = false; // Moved to the top for global access
 
 document.getElementById("yesButton").addEventListener("click", function() {
     this.innerText = messages[currentIndex];
@@ -90,7 +90,11 @@ document.getElementById('noButton').addEventListener('click', function() {
     
      // Play the "hooray" sound effect if allowed by the throttle
      if (canPlaySound) {
-        new Audio('Sounds/hooray.wav').play();
+        try {
+            new Audio('Sounds/hooray.wav').play();
+        } catch (error) {
+            console.error("Audio playback failed", error);
+        }
         canPlaySound = false;
         setTimeout(() => {
             canPlaySound = true;
@@ -119,4 +123,3 @@ Composer: Julius Fučík (1872–1916)
 Recording is in the public domain.
 Source: Wikipedia - https://en.wikipedia.org/wiki/File:Julius_Fu%C4%8D%C3%ADk%27s_%22Entrance_of_the_Gladiators%22,_performed_by_the_U.S._Marine_Band.oga
 */
-
