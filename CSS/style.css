@@ -62,8 +62,16 @@ footer {
 }
 .volume-control {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     left: 20px; /* Change from right to left */
     display: none; /* Initially hidden */
     z-index: 1000; /* Ensure this is higher than other elements */
+}
+.clownImage {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px; /* Adjusted size */
+    opacity: 0; /* Start invisible */
+    transition: opacity 2s ease-in-out; /* Smooth transition for the opacity */
 }
