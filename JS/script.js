@@ -17,8 +17,8 @@ const messages = [
 let currentIndex = 0;
 
 function getRandomPosition(element) {
-    const x = window.innerWidth - element.clientWidth;
-    const y = window.innerHeight - element.clientHeight;
+    const x = Math.max(window.innerWidth - element.clientWidth, 0);
+    const y = Math.max(window.innerHeight - element.clientHeight, 0);
     const randomX = Math.floor(Math.random() * x);
     const randomY = Math.floor(Math.random() * y);
     return [randomX, randomY];
@@ -43,6 +43,7 @@ document.getElementById("yesButton").addEventListener("click", function() {
         circusMusic.play();
         circusMusicPlayed = true; // Set the flag to true after playing
     }
+    showVolumeControl(); // Add this line at the end of the "yesButton" click event listener
 });
 
 // Define the fire function based on the confetti parameters from the screenshot
@@ -91,7 +92,9 @@ document.getElementById('noButton').addEventListener('click', function() {
      // Play the "hooray" sound effect if allowed by the throttle
      if (canPlaySound) {
         try {
-            new Audio('Sounds/hooray.wav').play();
+            let hooraySound = new Audio('Sounds/hooray.wav');
+            hooraySound.volume = document.getElementById('volumeSlider').value;
+            hooraySound.play();
         } catch (error) {
             console.error("Audio playback failed", error);
         }
@@ -103,7 +106,25 @@ document.getElementById('noButton').addEventListener('click', function() {
     // Allow the music to be played again if "Yes" is clicked after "No"
         circusMusicPlayed = false;    
     }
+    showVolumeControl(); // Add this line at the end of the "noButton" click event listener
 });
+
+document.getElementById('volumeSlider').addEventListener('input', function() {
+    document.getElementById('hooraySound').volume = this.value;
+    document.getElementById('circusMusic').volume = this.value;
+});
+
+const volumeSlider = document.getElementById('volumeSlider');
+volumeSlider.value = localStorage.getItem('volume') || 0.5; // Default to 0.5 if not set
+
+volumeSlider.addEventListener('input', function() {
+    localStorage.setItem('volume', this.value);
+    // Update the volume of audio elements as before
+});
+
+function showVolumeControl() {
+    document.querySelector('.volume-control').style.display = 'block';
+}
 
 /* 
 Confetti animation powered by canvas-confetti
