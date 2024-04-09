@@ -1,3 +1,6 @@
+const hooraySound = new Audio('Sounds/hooray.wav');
+const circusMusic = new Audio('Sounds/Entrance_of_the_Gladiators.mp3');
+
 const messages = [
     "Fuck No",
     "Don't Be Stupid",
@@ -39,7 +42,6 @@ document.getElementById("yesButton").addEventListener("click", function() {
 
     // Play the circus music if it has not been played yet
     if (!circusMusicPlayed) {
-        var circusMusic = document.getElementById('circusMusic');
         circusMusic.play();
         circusMusicPlayed = true; // Set the flag to true after playing
     }
@@ -66,7 +68,6 @@ let canPlaySound = true; // Add this line to declare the canPlaySound variable
 document.getElementById('noButton').addEventListener('click', function() {
 
      // Stop and reset the circus music
-        var circusMusic = document.getElementById('circusMusic');
         circusMusic.pause();
         circusMusic.currentTime = 0;
 
@@ -96,7 +97,6 @@ document.getElementById('noButton').addEventListener('click', function() {
      // Play the "hooray" sound effect if allowed by the throttle
      if (canPlaySound) {
         try {
-            let hooraySound = new Audio('Sounds/hooray.wav');
             hooraySound.volume = document.getElementById('volumeSlider').value;
             hooraySound.play();
         } catch (error) {
@@ -114,8 +114,8 @@ document.getElementById('noButton').addEventListener('click', function() {
 });
 
 document.getElementById('volumeSlider').addEventListener('input', function() {
-    document.getElementById('hooraySound').volume = this.value;
-    document.getElementById('circusMusic').volume = this.value;
+    hooraySound.volume = this.value;
+    circusMusic.volume = this.value;
 });
 
 const volumeSlider = document.getElementById('volumeSlider');
