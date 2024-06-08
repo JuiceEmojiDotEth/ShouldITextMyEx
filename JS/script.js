@@ -42,7 +42,7 @@ document.getElementById("yesButton").addEventListener("click", function() {
 
     // Play the circus music if it has not been played yet
     if (!circusMusicPlayed) {
-        circusMusic.currentTime = 8; // Start X seconds into the song
+        circusMusic.currentTime = 12.5; // Start X seconds into the song
         circusMusic.play();
         circusMusicPlayed = true; // Set the flag to true after playing
     }
