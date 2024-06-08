@@ -70,7 +70,7 @@ footer {
     position: fixed;
     bottom: 5px;
     right: 5px;
-    width: 150px; /* Reduced width */
+    width: 100px; /* Reduced width */
     height: auto; /* Adjust height automatically to maintain aspect ratio */
     display: none; /* Initially hidden */
 }
