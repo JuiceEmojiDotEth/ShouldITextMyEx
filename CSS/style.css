@@ -72,6 +72,7 @@ footer {
     bottom: 0;
     right: 0;
     width: 200px; /* Adjusted size */
+    z-index: -1; /* Ensures the image stays behind other content */
     opacity: 0; /* Start invisible */
     transition: opacity 2s ease-in-out; /* Smooth transition for the opacity */
 }
@@ -80,8 +81,8 @@ footer {
     position: fixed;
     left: 5px;
     bottom: 5px;
-    width: 200px; /* Adjusted to make the emoji smaller */
-    z-index: 0; /* Ensures the image stays behind other content */
+    width: 100px; /* Adjusted to make the emoji smaller */
+    z-index: -1; /* Ensures the image stays behind other content */
 }
 
 
