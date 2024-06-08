@@ -71,18 +71,22 @@ footer {
     position: fixed;
     bottom: 5px;
     right: 5px;
-    width: 100px; /* Adjusted size */
+    width: 150px; /* Reduced width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
     z-index: -1; /* Ensures the image stays behind other content */
-    opacity: 0; /* Start invisible */
-    transition: opacity 2s ease-in-out; /* Smooth transition for the opacity */
+    display: none; /* Initially hidden */
 }
 
 .juice-emoji {
     position: fixed;
     left: 5px;
     bottom: 5px;
-    width: 100px; /* Adjusted to make the emoji smaller */
+    width: 150px; /* Adjusted to make the emoji smaller */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
     z-index: -1; /* Ensures the image stays behind other content */
 }
+
+
+
 
 

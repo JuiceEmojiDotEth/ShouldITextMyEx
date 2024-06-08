@@ -47,10 +47,13 @@ document.getElementById("yesButton").addEventListener("click", function() {
         circusMusicPlayed = true; // Set the flag to true after playing
     }
     showVolumeControl(); // Add this line at the end of the "yesButton" click event listener
-    // New code to show the clown image
-    let clownImage = document.getElementById('clownImage');
-    clownImage.style.display = 'block'; // Show the clown image
-    setTimeout(() => { clownImage.style.display = 'none'; }, 2000); // Hide after 2 seconds
+
+    // Show the clown image for 2 seconds
+    const clownImage = document.querySelector('.clownImage');
+    clownImage.style.display = 'block';
+    setTimeout(() => {
+        clownImage.style.display = 'none';
+    }, 2000);
 });
 
 // Define the fire function based on the confetti parameters from the screenshot
