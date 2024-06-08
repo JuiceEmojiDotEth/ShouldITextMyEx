@@ -69,8 +69,8 @@ footer {
 }
 .clownImage {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
     width: 100px; /* Adjusted size */
     z-index: -1; /* Ensures the image stays behind other content */
     opacity: 0; /* Start invisible */
