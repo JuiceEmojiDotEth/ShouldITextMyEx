@@ -71,7 +71,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 200px; /* Adjusted size */
+    width: 100px; /* Adjusted size */
     z-index: -1; /* Ensures the image stays behind other content */
     opacity: 0; /* Start invisible */
     transition: opacity 2s ease-in-out; /* Smooth transition for the opacity */
